@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: april-fools-prank-app
+    env: node
+    rootDir: .
+    buildCommand: npm install
+    startCommand: npm start

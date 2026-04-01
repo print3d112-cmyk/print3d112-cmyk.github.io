@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick Astley</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        background: #040916;
+        color: #daf3ff;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, rgba(86, 199, 255, 0.18), transparent 24%),
+          linear-gradient(180deg, #020612 0%, #040916 100%);
+      }
+
+      .wrapper {
+        width: min(860px, 92vw);
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.6rem, 5vw, 4rem);
+        letter-spacing: 0.16em;
+      }
+
+      p {
+        margin: 0.9rem 0;
+        color: #9ad9ff;
+        font-size: 1rem;
+      }
+
+      img {
+        width: 100%;
+        max-width: 760px;
+        height: auto;
+        border-radius: 1.25rem;
+        border: 1px solid rgba(123, 219, 255, 0.22);
+        box-shadow: 0 0 3rem rgba(72, 189, 255, 0.18);
+      }
+
+      .back-link {
+        display: inline-flex;
+        margin-top: 1.5rem;
+        padding: 0.95rem 1.6rem;
+        border-radius: 999px;
+        background: rgba(25, 55, 90, 0.9);
+        color: #b5edff;
+        text-decoration: none;
+        border: 1px solid rgba(94, 200, 255, 0.25);
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+
+      .back-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 1.6rem rgba(64, 212, 255, 0.24);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>APRIL FOOLS</h1>
+      <div class="image-card" aria-label="Rick Astley illustration">
+        <svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="rickTitle">
+          <title id="rickTitle">Rick Astley portrait</title>
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1d3b60" />
+              <stop offset="100%" stop-color="#4692d9" />
+            </linearGradient>
+            <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#1a1a1a" />
+              <stop offset="100%" stop-color="#4b4b4b" />
+            </linearGradient>
+          </defs>
+          <rect width="360" height="260" rx="30" ry="30" fill="url(#bgGrad)" />
+          <circle cx="180" cy="110" r="72" fill="#fde3b8" />
+          <path d="M108 76c22-34 132-24 128 42" fill="none" stroke="#1a1a1a" stroke-width="18" stroke-linecap="round" />
+          <path d="M109 80c20-28 126-16 122 46" fill="#1a1a1a" />
+          <path d="M130 120c22 34 48 36 90 0" fill="#1a1a1a" opacity="0.65" />
+          <circle cx="150" cy="110" r="10" fill="#1a1a1a" />
+          <circle cx="210" cy="110" r="10" fill="#1a1a1a" />
+          <path d="M150 145c10 14 40 14 48 0" stroke="#1a1a1a" stroke-width="6" stroke-linecap="round" fill="none" />
+          <path d="M120 180c30 18 120 18 150 0" fill="rgba(255,255,255,0.12)" />
+          <text x="180" y="230" text-anchor="middle" fill="#e5f7ff" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">Rick Astley</text>
+        </svg>
+      </div>
+      <p>Never gonna give you up.</p>
+      <a class="back-link" href="index.html">Back to the vault</a>
+    </div>
+  </body>
+</html>

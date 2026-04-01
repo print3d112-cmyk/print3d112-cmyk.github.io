@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orbit Vault</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scene" id="sceneRoot">
+      <section class="intro" id="introScene">
+        <div class="starfield">
+          <span class="star s1"></span>
+          <span class="star s2"></span>
+          <span class="star s3"></span>
+          <span class="star s4"></span>
+          <span class="star s5"></span>
+          <span class="star s6"></span>
+          <span class="star s7"></span>
+          <span class="star s8"></span>
+          <span class="star s9"></span>
+          <span class="star s10"></span>
+          <span class="star s11"></span>
+          <span class="star s12"></span>
+        </div>
+        <div class="launch-stream"></div>
+
+        <div class="nebula"></div>
+        <div class="nebula nebula--secondary"></div>
+
+        <div class="track">
+          <div class="track-shadow"></div>
+          <div class="track-left"></div>
+          <div class="track-right"></div>
+          <div class="track-rail track-rail--left"></div>
+          <div class="track-rail track-rail--right"></div>
+          <div class="track-line track-line--near"></div>
+          <div class="track-line track-line--far"></div>
+          <div class="beam beam--front"></div>
+          <div class="beam beam--rear"></div>
+          <div class="glow-grid"></div>
+          <div class="ship">
+            <div class="ship-wake"></div>
+            <div class="bike-wheel bike-wheel--rear"></div>
+            <div class="bike-tail"></div>
+            <div class="bike-body">
+              <div class="bike-tank"></div>
+              <div class="bike-seat"></div>
+              <div class="bike-engine"></div>
+              <div class="bike-exhaust"></div>
+            </div>
+            <div class="bike-front">
+              <div class="bike-fairing"></div>
+              <div class="bike-windscreen"></div>
+              <div class="bike-hood"></div>
+              <div class="bike-vent bike-vent--left"></div>
+              <div class="bike-vent bike-vent--right"></div>
+              <div class="bike-headlight"></div>
+              <div class="bike-fork bike-fork--left"></div>
+              <div class="bike-fork bike-fork--right"></div>
+              <div class="bike-fender"></div>
+              <div class="bike-handle bike-handle--left"></div>
+              <div class="bike-handle bike-handle--right"></div>
+              <div class="bike-mirror bike-mirror--left"></div>
+              <div class="bike-mirror bike-mirror--right"></div>
+            </div>
+            <div class="bike-wheel bike-wheel--front"></div>
+            <div class="ship-flare"></div>
+          </div>
+        </div>
+        <div class="cockpit">
+          <div class="cockpit-shell">
+            <div class="flight-row"><span class="label">SPEED</span><span id="speedValue">00.00c</span></div>
+            <div class="flight-row"><span class="label">STATUS</span><span id="engageStatus">STANDBY</span></div>
+            <div class="flight-row"><span class="label">VAULT</span><span id="vaultStatus">STANDBY</span></div>
+            <div class="flight-row countdown-row"><span class="label">COUNTDOWN</span><span id="countdownValue">3</span></div>
+            <div class="hud-glow"></div>
+            <button id="launchButton" class="launch-button">PRESS SPACE OR CLICK LAUNCH</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="vault" id="vaultScene">
+        <div class="vault-backdrop"></div>
+        <div class="vault-grid"></div>
+        <div class="vault-ring ring-outside"></div>
+        <div class="vault-ring ring-inside"></div>
+        <div class="vault-core"></div>
+        <div class="vault-detail vault-detail--left"></div>
+        <div class="vault-detail vault-detail--right"></div>
+        <div class="vault-door vault-door--left"></div>
+        <div class="vault-door vault-door--right"></div>
+        <div class="vault-copy">
+          <h1>ORBIT VAULT</h1>
+          <p>Secure entry sequence complete.</p>
+          <a id="rickLink" href="rick.html" class="vault-pill vault-button">APRIL FOOLS</a>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
